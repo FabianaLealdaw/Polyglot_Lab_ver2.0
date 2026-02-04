@@ -133,14 +133,9 @@ header {
   color: var(--color-accent-current);
 }
 
-<<<<<<< HEAD
-/*===================
-    MAIN
-=======
 
 /*===================
     HERO SECTION
->>>>>>> 964b536 (Actualiza la estructura de courses.html: elimina CSS innecesario, ajusta enlaces y añade atributos de tamaño a las imágenes de los cursos.)
 ===================*/
 /* Contenedor principal: grid de 2 columnas, altura de pantalla menos header */
 .hero {
@@ -200,8 +195,6 @@ header {
   font-weight: 500;
   color: #545454;
 }
-<<<<<<< HEAD
-=======
 
 /* =========================
    GALLERY SECTION
@@ -737,7 +730,6 @@ main {
   }
 }
 
->>>>>>> 964b536 (Actualiza la estructura de courses.html: elimina CSS innecesario, ajusta enlaces y añade atributos de tamaño a las imágenes de los cursos.)
 /*===================
     COURSES SECTION
 ===================*/
@@ -867,81 +859,96 @@ main {
   transform: translateY(-2px);
   opacity: 0.95;
 }
-<<<<<<< HEAD
       
-/*===================
-    CONTACT SECTION 
-===================*/
-/* layout para footer abajo */
-html, body{
-  height: 100%;
-  margin: 0;
-}
-body{
-  display: flex;
-  flex-direction: column;
-}
+/* ===================
+   CONTACT SECTION
+=================== */
 
-/* area central */
-.contact-page{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-/* contenedor */
-.contact-map{
-  width: 100%;
-  text-align: center;
-}
-
-/* título grande tipo screenshot */
-.contact-title{
-  font-size: 4rem;
-  font-weight: 800;
-  margin: 0 0 2rem;
-  color: #df6d69; /* coral */
-  letter-spacing: 1px;
-}
-
-/* marco coral + tamaño del mapa */
-.map-wrapper{
-  width: min(900px, 100%);
-  margin: 0 auto;
-  padding: 10px;              
-  border: 4px solid #df6d69;  
-  border-radius: 10px;       
-  background: transparent;
-}
-
-/* la imagen del mapa */
-.map-img{
-  width: 100%;
-  height: 520px;       
-  object-fit: cover;
-  display: block;
-  border-radius: 6px;
-}
-
-.map-container {
-  margin-top: 2rem;
-}
-
-.contact-info {
-  text-align: center;
-  max-width: 400px;
-  margin: 2.5rem auto 0 auto;
-}
 .contact-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem; /* REDUCIDO */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
-  padding-bottom: 6rem;
+  gap: 2rem; /* REDUCIDO */
+  text-align: center;
 }
+
+/* Título */
+.contact-title {
+  font-size: clamp(3rem, 6vw, 4.2rem);
+  font-weight: 800;
+  color: var(--accent-color);
+  margin-bottom: 0.3rem;
+}
+
+/* Subtítulo */
+.contact-subtitle {
+  max-width: 520px;
+  font-size: 1.15rem;
+  color: var(--text-color);
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* ===== MAPA GOOGLE ===== */
+.map-wrapper {
+  width: 100%;
+  max-width: 100%; /* CLAVE: evita el corte */
+  height: 380px;
+  border: 3px solid var(--accent-color);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 2rem 0; /* MÁS COMPACTO */
+}
+
+.map-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Botón ruta */
+.map-link {
+  margin-top: 0.5rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== INFO DE CONTACTO ===== */
+.contact-info {
+  margin-top: 2.5rem; /* REDUCIDO */
+  max-width: 420px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.contact-info h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin: 0.25rem 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .map-wrapper {
+    height: 320px;
+  }
+}
+
 /*===================
     GET A QUOTE SECTION 
 ===================*/
@@ -1100,11 +1107,6 @@ main {
 
 /*===================
     FOOTER SECTION 
-=======
-
-/*===================
-    FOOTER
->>>>>>> 964b536 (Actualiza la estructura de courses.html: elimina CSS innecesario, ajusta enlaces y añade atributos de tamaño a las imágenes de los cursos.)
 ===================*/
 /* FOOTER BASE */
 footer {
