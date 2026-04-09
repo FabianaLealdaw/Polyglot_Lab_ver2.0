@@ -1226,13 +1226,7 @@ footer .social_media a:hover {
   transform: scale(1.1);
 }
 
-/*===================
-<<<<<<< HEAD
-    PRIVACY SECTION 
-=======
-    PRIVACY PAGE
->>>>>>> 964b536 (Actualiza la estructura de courses.html: elimina CSS innecesario, ajusta enlaces y añade atributos de tamaño a las imágenes de los cursos.)
-===================*/
+
 /* ==== Pagina de Privacy ==== */
 .privacy-page {
   max-width: 900px;
