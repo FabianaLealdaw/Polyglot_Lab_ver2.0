@@ -1,3 +1,7 @@
+"[html]"; {
+  "editor.formatOnSave"; false
+}
+
 const negocio = [19.432608, -99.133209]; // ejemplo: CDMX
 
 // Inicializar mapa centrado en el negocio

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Polyglot Lab</title>
 
     <!-- style.css: estilos generales -->
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style.css" >
 
     <!-- Librería Font Awesome para iconos (redes sociales, etc.) -->
     <link
@@ -15,25 +15,25 @@
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    >
 
     <!-- Optimización y carga de la fuente desde Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
       rel="stylesheet"
-    />
+    >
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-sA+e2b4uYFqNZYs7hFq+6q8S9Tv3bYMFbQb0Hf7k6Y="
       crossorigin=""
-    />
+    >
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css"
-    />
+    >
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-o1Gm9fXkJQv4hQKebqgB0bawCtGm4dMttIefM4uwxM8="
@@ -55,7 +55,7 @@
 
         <!-- Logo de la marca -->
         <a class="nav-logo" href="#inicio">
-          <img src="./assets/images/Logo_PL.png" alt="Polyglot Lab" />
+          <img src="./assets/images/Logo_PL.png" alt="Polyglot Lab" >
         </a>
 
         <!-- Botón CTA principal del menú -->
@@ -103,43 +103,39 @@
             <img
               src="./assets/images/gallery/clase1.jpg"
               alt="Language class"
-            />
+            >
           </figure>
           <figure>
             <img
               src="./assets/images/gallery/clase2.jpg"
               alt="Student studying"
-            />
+            >
           </figure>
           <figure>
             <img
               src="./assets/images/gallery/clase3.jpg"
               alt="Kids learning together"
-            />
+            >
           </figure>
           <figure>
             <img
               src="./assets/images/gallery/clase4.jpg"
               alt="Private lesson"
-            />
+            >
           </figure>
           <figure>
-            <img 
-              src="./assets/images/gallery/clase5.jpg" 
-              alt="Language lab" />
+            <img src="./assets/images/gallery/clase5.jpg" alt="Language lab" >
           </figure>
           <figure>
-            <img 
-            src="./assets/images/gallery/adults.jpg" 
-            alt="Adult class" />
+            <img src="./assets/images/gallery/adults.jpg" alt="Adult class" >
           </figure>
         </div>
 
         <!-- Modal -->
         <div id="modal">
-          <img id="modal-img" alt="Enlarged gallery image" />  
+          <img id="modal-img" src="./js/gallery.js" alt="Enlarged gallery image" >
         </div>
-
+        
       </section>
       <!-- Sección de cursos -->
       <section class="courses" id="courses">
@@ -159,7 +155,7 @@
               class="course-img"
               src="./assets/images/english.svg"
               alt="English course"
-            />
+            >
             <h3 class="course-name">English</h3>
 
             <!-- Información desplegable del curso -->
@@ -183,7 +179,7 @@
               class="course-img"
               src="./assets/images/spanish.svg"
               alt="Spanish course"
-            />
+            >
             <h3 class="course-name">Spanish</h3>
 
             <details class="course-details">
@@ -206,7 +202,7 @@
               class="course-img"
               src="./assets/images/italian.svg"
               alt="Italian course"
-            />
+            >
             <h3 class="course-name">Italian</h3>
 
             <details class="course-details">
@@ -229,7 +225,7 @@
               class="course-img"
               src="./assets/images/french.svg"
               alt="French course"
-            />
+            >
             <h3 class="course-name">French</h3>
 
             <details class="course-details">
@@ -252,7 +248,7 @@
               class="course-img"
               src="./assets/images/deutsch.svg"
               alt="German course"
-            />
+            >
             <h3 class="course-name">Deutsch</h3>
 
             <details class="course-details">
@@ -276,7 +272,7 @@
               class="course-img"
               src="./assets/images/korean.svg"
               alt="Korean course"
-            />
+            >
             <h3 class="course-name">Korean</h3>
 
             <details class="course-details">
@@ -309,7 +305,6 @@
           >
           </iframe>
         </div>
-        
       </section>
 
       <!-- Sección del formulario -->
@@ -331,7 +326,7 @@
             placeholder="Your Name"
             required
             pattern="[A-Za-zÀ-ÿ\s]{1,15}"
-          />
+          >
 
           <!-- Campo: apellidos -->
           <label for="apellidos">Surname</label>
@@ -342,7 +337,7 @@
             placeholder="Your Surname"
             required
             pattern="[A-Za-zÀ-ÿ\s]{1,40}"
-          />
+          >
 
           <!-- Campo: email -->
           <label for="correo">Email</label>
@@ -352,7 +347,7 @@
             name="correo"
             placeholder="your@email.com"
             required
-          />
+          >
 
           <!-- Campo: teléfono -->
           <label for="telefono">Phone number</label>
@@ -363,7 +358,7 @@
             placeholder="123456789"
             required
             pattern="[0-9]{9}"
-          />
+          >
 
           <!-- Campo: descripción -->
           <label for="descripcion">Description</label>
@@ -394,7 +389,7 @@
             min="1"
             max="12"
             value="1"
-          />
+          >
 
           <!-- =====================
               EXTRAS
@@ -409,7 +404,7 @@
                 class="extra"
                 name="extra-workshops"
                 value="50"
-              />
+              >
               <span>Conversation workshops (+50€)</span>
             </label>
 
@@ -419,7 +414,7 @@
                 class="extra"
                 name="extra-materials"
                 value="30"
-              />
+              >
               <span>Learning materials (+30€)</span>
             </label>
 
@@ -429,7 +424,7 @@
                 class="extra"
                 name="extra-exam"
                 value="70"
-              />
+              >
               <span>Exam preparation (+70€)</span>
             </label>
           </fieldset>
@@ -442,7 +437,7 @@
 
           <!-- Aceptación de política de privacidad -->
           <div class="privacy">
-            <input type="checkbox" id="privacy" name="privacy" required />
+            <input type="checkbox" id="privacy" name="privacy" required >
             <label for="privacy">
               I accept the
               <a href="./privacy.html" target="_blank">Privacy Policy</a>
@@ -472,7 +467,7 @@
       <div>
         <!-- Bloque de identidad / visión -->
         <div class="vision">
-          <img src="./assets/images/Logo_PL.png" alt="Logo" width="200" />
+          <img src="./assets/images/Logo_PL.png" alt="Logo" width="200" >
           <p>
             Your language lab, where the passion for learning meets academic
             excellence in a warm and welcoming environment.
