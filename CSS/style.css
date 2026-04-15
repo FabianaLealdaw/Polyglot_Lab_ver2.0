@@ -887,11 +887,11 @@ main {
 .contact-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 2rem 4rem; /* REDUCIDO */
+  padding: 3rem 2rem 4rem; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem; /* REDUCIDO */
+  gap: 2rem; 
   text-align: center;
 }
 
@@ -915,12 +915,12 @@ main {
 /* ===== MAPA GOOGLE ===== */
 .map-wrapper {
   width: 100%;
-  max-width: 100%; /* CLAVE: evita el corte */
+  max-width: 100%; 
   height: 380px;
   border: 3px solid var(--accent-color);
   border-radius: 12px;
   overflow: hidden;
-  margin: 2rem 0; /* MÁS COMPACTO */
+  margin: 2rem 0; 
 }
 
 .map-frame {
@@ -942,26 +942,70 @@ main {
   text-decoration: underline;
 }
 
+.map-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.map-button {
+  background-color: var(--accent-color);
+  color: #FCFAE7;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.map-button:hover {
+  background-color: #c95c58;
+  transform: translateY(-2px);
+}
+
 /* ===== INFO DE CONTACTO ===== */
 .contact-info {
-  margin-top: 2.5rem; /* REDUCIDO */
+  margin-top: 3rem;
+  padding: 2rem;
   max-width: 420px;
   text-align: center;
-  color: var(--text-color);
+
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Título */
 .contact-info h2 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
+/* Texto */
 .contact-info p {
-  margin: 0.25rem 0;
-  font-size: 1.05rem;
-  line-height: 1.6;
+  margin: 0.4rem 0;
 }
 
+/* ICONOS */
+.contact-info i {
+  color: var(--accent-color);
+  margin-right: 6px;
+}
+
+/* LINKS */
+.contact-info a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.contact-info a:hover {
+  opacity: 0.8;
+}
 /* Responsive */
 @media (max-width: 600px) {
   .map-wrapper {
