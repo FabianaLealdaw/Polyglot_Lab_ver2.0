@@ -44,7 +44,7 @@
     </header>
 
     <main>
-      <h1 class="visually-hidden">Request a Quote</h1>
+    
       <!-- Formulario para pedir presupuesto -->
       <form
         id="formulario-web"
@@ -62,8 +62,8 @@
           name="nombre"
           placeholder="Your Name"
           required
-          pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,40}$"
-          title="Name must contain only letters and spaces (max 40 characters)"
+          pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{1,15}$"
+          title="Name must contain only letters and spaces (max 15 characters)"
         >
 
         <!-- Campo: apellidos -->
@@ -98,7 +98,7 @@
           name="telefono"
           placeholder="123 456 789"
           required
-          pattern="^[0-9]{9,15}$"
+          pattern="^[0-9]{9}$"
           title="Enter a valid phone number">
   
 
@@ -132,6 +132,16 @@
             max="12"
             value="1"
           >
+          
+          <label for="plazo">Delivery time (days):</label>
+          <input 
+            type="number" 
+            id="plazo" 
+            min="1" 
+            required
+          >
+           
+          <p id="resultado"></p>
 
           <!-- =====================
               EXTRAS
@@ -174,6 +184,8 @@
 
           <!-- Botón de envío -->
           <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+          
         </form>
           <!-- Resumen del presupuesto generado por JavaScript -->
         <section id="quote-result" class="quote-result" hidden>

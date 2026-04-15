@@ -1,6 +1,3 @@
-// Este script carga las noticias desde un archivo JSON externo
-// y las muestra de forma dinámica en la página principal
-
 const newsContainer = document.getElementById("news-container");
 
 // Se utiliza fetch para obtener los datos del archivo JSON

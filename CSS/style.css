@@ -504,7 +504,9 @@ header {
 main {
   padding: 4rem 2rem;
   background: linear-gradient(135deg, #fdfbe8 0%, #eef6df 100%);
+  font-size: 2rem;
 }
+
 
 /* =========================
    TARJETA FORMULARIO
@@ -519,7 +521,9 @@ main {
   box-sizing: border-box;
   color: #fcfae7;
   overflow: hidden;
+
 }
+
 
 /* =========================
    TÍTULO
@@ -705,6 +709,22 @@ main {
   opacity: 0.9;
 }
 
+.formulario button[type="reset"] {
+  background-color: transparent;
+  border: 2px solid #FCFAE7;
+  color: #FCFAE7;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Hover */
+.formulario button[type="reset"]:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
 /* =========================
    RESPONSIVE
    ========================= */

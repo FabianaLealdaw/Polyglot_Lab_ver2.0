@@ -133,7 +133,7 @@
 
         <!-- Modal -->
         <div id="modal">
-          <img id="modal-img" src="./js/gallery.js" alt="Enlarged gallery image" >
+          <img id="modal-img" src="./assets/images/gallery/clase1.jpg" alt="Enlarged gallery image" >
         </div>
         
       </section>
@@ -336,7 +336,7 @@
             name="apellidos"
             placeholder="Your Surname"
             required
-            pattern="[A-Za-zÀ-ÿ\s]{1,40}"
+            pattern="[A-Za-zÀ-ÿ\s]{1,40}$"
           >
 
           <!-- Campo: email -->
@@ -390,6 +390,13 @@
             max="12"
             value="1"
           >
+          <label for="plazo">Delivery time (days):</label>
+          <input 
+            type="number" 
+            id="plazo" 
+            min="1" 
+            required
+          >
 
           <!-- =====================
               EXTRAS
@@ -428,11 +435,10 @@
               <span>Exam preparation (+70€)</span>
             </label>
           </fieldset>
-
+          
           <!-- =====================
               TOTAL PRICE
               ===================== -->
-
           <p id="total-price">Total: €0</p>
 
           <!-- Aceptación de política de privacidad -->
@@ -446,6 +452,7 @@
 
           <!-- Botón de envío -->
           <button type="submit">Send</button>
+          <button type="reset">Reset</button>
         </form>
       </section>
       <section id="news-detail" class="news-detail-section">
