@@ -34,7 +34,7 @@ fetch("data/news.json")
       // Al hacer clic en una noticia se muestra su contenido completo
       article.addEventListener("click", () => {
         const detailContainer = document.getElementById(
-          "news-detail-container"
+          "news-detail-container",
         );
 
         // Se limpia el contenido anterior de la sección de detalle
@@ -69,10 +69,8 @@ fetch("data/news.json")
 
         fullArticle.appendChild(budgetLink);
 
-
         // Se realiza un desplazamiento suave hasta la sección de detalle
-        const targetPosition =
-          document.getElementById("news-detail").offsetTop;
+        const targetPosition = document.getElementById("news-detail").offsetTop;
 
         window.scrollTo({
           top: targetPosition - 80,

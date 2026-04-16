@@ -21,6 +21,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     >
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    >
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css"
+    >
   </head>
 
   <body>
@@ -52,22 +61,23 @@
        <p class="contact-subtitle">Find us here or get in touch with us</p>
 
         <div class="map-wrapper">
-          <iframe
+          <div
+            id="map"
             class="map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.481295766449!2d2.14672907664942!3d41.38535299612065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a39cb4652ea5%3A0x241e477925055c9!2sAcademia%20de%20Cursos%20Profesionales%20y%20FP%20Davante%20%7C%20Barcelona!5e0!3m2!1ses!2ses!4v1770212097678!5m2!1ses!2ses"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title= "Polyglot Lab location map"
+            role="application"
+            aria-label="Polyglot Lab map and route"
           >
-          </iframe>
+          </div>
         </div>
       </section>
 
         <div class="map-button-wrapper">
           <a 
+            id="directions-link"
             class="map-button"
             href="https://www.google.com/maps/dir/?api=1&destination=41.38535,2.14672"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Get directions
           </a>
@@ -116,6 +126,7 @@
             <a href="./gallery.html">Gallery</a>
             <a href="./contact.html">Contact</a>
             <a href="./get_a_quote.html">Get a Quote</a>
+            <a href="./legal_notice.html">Legal Notice</a>
           </nav>
         </div>
 
@@ -153,9 +164,11 @@
       <div class="divide"></div>
       <p>Copyright 2025</p>
     </footer>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
     <script src="../js/map.js"></script>
 
   </body>

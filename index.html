@@ -27,7 +27,6 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-sA+e2b4uYFqNZYs7hFq+6q8S9Tv3bYMFbQb0Hf7k6Y="
       crossorigin=""
     >
     <link
@@ -36,7 +35,6 @@
     >
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-o1Gm9fXkJQv4hQKebqgB0bawCtGm4dMttIefM4uwxM8="
       crossorigin=""
     ></script>
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
@@ -297,13 +295,25 @@
         <p class="contact-subtitle">Find us here or get in touch with us</p>
 
         <div class="map-wrapper">
-          <iframe
+          <div
+            id="map"
             class="map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.481295766449!2d2.14672907664942!3d41.38535299612065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a39cb4652ea5%3A0x241e477925055c9!2sAcademia%20de%20Cursos%20Profesionales%20y%20FP%20Davante%20%7C%20Barcelona!5e0!3m2!1ses!2ses!4v1770212097678!5m2!1ses!2ses"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            role="application"
+            aria-label="Polyglot Lab map and route"
           >
-          </iframe>
+          </div>
+        </div>
+
+        <div class="map-button-wrapper">
+          <a
+            id="directions-link"
+            class="map-button"
+            href="https://www.google.com/maps/dir/?api=1&destination=41.38535,2.14672"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get directions
+          </a>
         </div>
       </section>
 
@@ -446,7 +456,7 @@
             <input type="checkbox" id="privacy" name="privacy" required >
             <label for="privacy">
               I accept the
-              <a href="./privacy.html" target="_blank">Privacy Policy</a>
+              <a href="./views/privacy.html" target="_blank">Privacy Policy</a>
             </label>
           </div>
 
@@ -490,6 +500,7 @@
             <a href="./views/gallery.html">Gallery</a>
             <a href="./views/contact.html">Contact</a>
             <a href="./views/get_a_quote.html">Get a Quote</a>
+            <a href="./views/legal_notice.html">Legal Notice</a>
           </nav>
         </div>
 
@@ -539,10 +550,10 @@
     <!-- Gallery modal -->
     <script src="./js/gallery.js"></script>
 
-    <!-- JS general -->
-    <script src="../js/index.js"></script>
-
     <!-- presupuesto -->
-    <script src="../js/budget.js"></script>
+    <script src="./js/budget.js"></script>
+
+    <!-- mapa -->
+    <script src="./js/map.js"></script>
   </body>
 </html>

@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     totalPriceElement.textContent = `Total: €${total.toFixed(2)}`;
   }
 
-  // EVENTOS 
+  // EVENTOS
   courseSelect.addEventListener("change", updateTotal);
   monthsInput.addEventListener("input", updateTotal);
   plazoInput.addEventListener("input", updateTotal);

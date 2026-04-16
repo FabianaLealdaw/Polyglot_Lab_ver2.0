@@ -119,7 +119,9 @@ header {
   border-radius: 999px;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.25s ease, color 0.25s ease;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
 }
 
 /* Hover del botón CTA */
@@ -133,7 +135,6 @@ header {
   color: var(--color-accent-current);
 }
 
-
 /*===================
     HERO SECTION
 ===================*/
@@ -146,11 +147,7 @@ header {
   grid-template-columns: 1fr 1fr;
   align-items: center;
 
-  background: linear-gradient(
-    135deg,
-    #FCFAE7 0%,
-    #EEF6DF 100%
-  );
+  background: linear-gradient(135deg, #fcfae7 0%, #eef6df 100%);
 }
 
 /* Título colocado en la segunda columna, alineado a la derecha */
@@ -214,7 +211,9 @@ header {
   object-fit: cover;
   border-radius: 20px;
   cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .gallery img:hover {
@@ -232,7 +231,7 @@ header {
   text-align: center;
 }
 .gallery-grid {
-  margin-top: 0; 
+  margin-top: 0;
 }
 /* MODAL */
 #modal {
@@ -286,7 +285,9 @@ header {
   padding: 2rem;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -323,7 +324,7 @@ header {
 
 .news-detail-section {
   padding: 6rem 2rem;
-  background-color: #FCFAE7;
+  background-color: #fcfae7;
 }
 
 #news-detail-container {
@@ -342,7 +343,7 @@ header {
 
 .news-detail-date {
   font-size: 0.9rem;
-  color: #FCFAE7;
+  color: #fcfae7;
   margin-bottom: 1.5rem;
 }
 
@@ -351,7 +352,7 @@ header {
   line-height: 1.7;
 }
 .news-detail-article {
-  background-color:#b0d7c3;
+  background-color: #b0d7c3;
   padding: 3rem;
   border-radius: 20px;
 }
@@ -430,12 +431,12 @@ header {
 /* ===== MAPA GOOGLE ===== */
 .map-wrapper {
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
   height: 380px;
   border: 3px solid var(--accent-color);
   border-radius: 12px;
   overflow: hidden;
-  margin: 2rem 0; 
+  margin: 2rem 0;
 }
 
 .map-frame {
@@ -443,6 +444,11 @@ header {
   height: 100%;
   border: 0;
   display: block;
+}
+
+/* Keep Leaflet tile images from inheriting site image sizing rules */
+.leaflet-container img {
+  max-width: none !important;
 }
 
 /* Botón ruta */
@@ -468,7 +474,7 @@ header {
 .contact-info {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* CLAVE */
+  align-items: center; /* CLAVE */
   justify-content: center;
   margin: 2.5rem auto 0;
   max-width: 420px;
@@ -507,7 +513,6 @@ main {
   font-size: 2rem;
 }
 
-
 /* =========================
    TARJETA FORMULARIO
    ========================= */
@@ -521,9 +526,7 @@ main {
   box-sizing: border-box;
   color: #fcfae7;
   overflow: hidden;
-
 }
-
 
 /* =========================
    TÍTULO
@@ -696,7 +699,9 @@ main {
   letter-spacing: 1px;
   color: #fcfae7;
   cursor: pointer;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
 }
 
 .formulario button:hover {
@@ -711,8 +716,8 @@ main {
 
 .formulario button[type="reset"] {
   background-color: transparent;
-  border: 2px solid #FCFAE7;
-  color: #FCFAE7;
+  border: 2px solid #fcfae7;
+  color: #fcfae7;
   padding: 10px;
   border-radius: 6px;
   cursor: pointer;
@@ -879,7 +884,7 @@ main {
   transform: translateY(-2px);
   opacity: 0.95;
 }
-      
+
 /* ===================
    CONTACT SECTION
 =================== */
@@ -887,11 +892,11 @@ main {
 .contact-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 2rem 4rem; 
+  padding: 3rem 2rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem; 
+  gap: 2rem;
   text-align: center;
 }
 
@@ -915,12 +920,12 @@ main {
 /* ===== MAPA GOOGLE ===== */
 .map-wrapper {
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
   height: 380px;
   border: 3px solid var(--accent-color);
   border-radius: 12px;
   overflow: hidden;
-  margin: 2rem 0; 
+  margin: 2rem 0;
 }
 
 .map-frame {
@@ -951,7 +956,7 @@ main {
 
 .map-button {
   background-color: var(--accent-color);
-  color: #FCFAE7;
+  color: #fcfae7;
   padding: 0.8rem 1.6rem;
   border-radius: 8px;
   text-decoration: none;
@@ -1290,7 +1295,6 @@ footer .social_media a:hover {
   transform: scale(1.1);
 }
 
-
 /* ==== Pagina de Privacy ==== */
 .privacy-page {
   max-width: 900px;
@@ -1320,4 +1324,3 @@ footer .social_media a:hover {
   font-size: 0.9rem;
   opacity: 0.7;
 }
-
