@@ -1,4 +1,4 @@
-const negocio = [19.432608, -99.133209]; // ejemplo: CDMX
+const negocio = [19.432608, -99.133209]; 
 
 // Inicializar mapa centrado en el negocio
 const map = L.map("map").setView(negocio, 14);
@@ -46,7 +46,7 @@ if (navigator.geolocation) {
 }
 
 $(document).ready(function () {
-  const $gallery = $("#gallery"); // Click para ver en grande
+  const $gallery = $("#gallery"); 
 
   $("#gallery").on("click", "img", function () {
     $("#modal-img").attr("src", $(this).attr("src"));

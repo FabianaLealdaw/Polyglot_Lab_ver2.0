@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const businessMarker = L.marker(business).addTo(map);
   businessMarker.bindPopup("Polyglot Lab").openPopup();
 
-  // Recalculate tile layout after the map container finishes rendering.
+  // Recalculate
   requestAnimationFrame(() => {
     map.invalidateSize();
   });
